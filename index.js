@@ -4,7 +4,6 @@ require("dotenv").config();
 const Bot = require("./src/bot/Bot");
 const LoggerManager = require("./src/log/LoggerManager");
 const RegisrtationCommand = require("./src/commands/Regisrtation.command");
-const HelpCommand = require("./src/commands/Help.command");
 const OrderCommand = require("./src/commands/Order.command");
 const FormCommand = require("./src/commands/Form.command");
 const Command = require("./src/commands/command.class");
@@ -31,7 +30,6 @@ try {
   // Создаем массив команд
   const commands = [
     new RegisrtationCommand(bot.bot),
-    new HelpCommand(bot.bot),
     new OrderCommand(bot.bot),
     new FormCommand(bot.bot),
     new ButtonsCommand(bot.bot),
