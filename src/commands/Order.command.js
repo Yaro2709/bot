@@ -37,8 +37,7 @@ class OrderCommand extends Command {
               remove_keyboard: true, // Удаляем клавиатуру
             },
           };
-
-      await this.bot.sendMessage(chatId, 'Начало оформления заявки', options );  //Начато оформление заявки, заполняйте информацию по очереди
+          
      new ApiWeb(this.bot).botCommandOrder(chatId);    
     });
   }
