@@ -19,9 +19,6 @@ class FormCommand extends Command {
         if (msg.text === "/start") {
           return;
         }
-        if (msg.text === "/help") {
-          return;
-        }
 
         if (msg.text === "/registration") {
           return;
@@ -34,6 +31,7 @@ class FormCommand extends Command {
         if (msg.text === "/clear") {
           return;
         }
+
         if (msg.text === "/chats") {
           return;
         }
@@ -51,18 +49,6 @@ class FormCommand extends Command {
         }
 
         if (msg.text === "/about") {
-          return;
-        }
-
-        if (msg.text === "/services") {
-          return;
-        }
-
-        if (msg.text === "/menu") {
-          return;
-        }
-
-        if (msg.text === "/fast") {
           return;
         }
 

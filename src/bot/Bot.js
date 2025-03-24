@@ -23,16 +23,12 @@ class Bot {
       this.bot.onText(/\/start/, async (msg) => {
         this.bot.setMyCommands([
           { command: "/start", description: "Начальное приветствие" },
-          { command: "/help", description: "Получить справку" },
+          { command: "/about", description: "О нас" },
           { command: "/order", description: "Оформить заявку" },
           { command: "/clear", description: "Отменить заполнение заявки/выйти из чатов"},
           { command: "/chats", description: "Мои заказы" },
           // { command: "/logoutchat", description: "Выйти из чатов" },
           { command: "/myid", description: "Запросить мой id" },
-          { command: "/about", description: "О нас" },
-          { command: "/services", description: "Наши услуги" },
-          { command: "/menu", description: "Актуальное меню" },
-          { command: "/fast", description: "Оформить быструю заявку" },
         ]);
         const chatId = msg.chat.id;
         console.log(msg.message_id);

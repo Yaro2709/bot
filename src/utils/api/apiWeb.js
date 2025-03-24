@@ -73,20 +73,6 @@ class ApiWeb {
     this.postData(post, url);
   }
 
-  // наши услуги
-  async botCommandServices(tlgId) {
-    let url = BOT_API_URL + "/api/bot/command/services";
-    const post = { tlgId: tlgId };
-    this.postData(post, url);
-  }
-
-  // меню
-  async botCommandMenu(tlgId) {
-    let url = BOT_API_URL + "/api/bot/command/menu";
-    const post = { tlgId: tlgId };
-    this.postData(post, url);
-  }
-
   // стартовая
   async botCommandStart(tlgId) {
     let url = BOT_API_URL + "/api/bot/command/start";
@@ -97,13 +83,6 @@ class ApiWeb {
   // начать оформлять заявку
   async botCommandOrder(tlgId) {
     let url = BOT_API_URL + "/api/bot/command/order";
-    const post = { tlgId: tlgId };
-    this.postData(post, url);
-  }
-
-  // начать оформлять быструю заявку
-  async botCommandOrderFast(tlgId) {
-    let url = BOT_API_URL + "/api/bot/command/fast";
     const post = { tlgId: tlgId };
     this.postData(post, url);
   }
