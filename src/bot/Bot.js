@@ -28,7 +28,7 @@ class Bot {
           { command: "/clear", description: "Отменить заполнение заявки/выйти из чатов"},
           { command: "/chats", description: "Мои заказы" },
           // { command: "/logoutchat", description: "Выйти из чатов" },
-          { command: "/myid", description: "Запросить мой id" },
+          // { command: "/myid", description: "Запросить мой id" },
         ]);
         const chatId = msg.chat.id;
         console.log(msg.message_id);
