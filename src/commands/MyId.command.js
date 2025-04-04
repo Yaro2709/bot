@@ -2,7 +2,6 @@
 
 const TELEGRAMM_ADMIN_CHAT = process.env.TELEGRAMM_ADMIN_CHAT;
 //const WEBAPPURL = process.env.WEBAPPURL;
-const ChatHandle = require("../core/chats/chat-handle");
 const Command = require("./command.class");
 const responseTemplate = require("./responseTemplate/responseTemplate");
 
