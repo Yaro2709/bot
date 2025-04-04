@@ -1,7 +1,5 @@
 // @ts-check
 
-const ChatHandle = require("../core/chats/chat-handle");
-
 class Command {
   constructor(bot) {
     this.bot = bot;
