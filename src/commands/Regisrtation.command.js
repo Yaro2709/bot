@@ -1,7 +1,6 @@
 // @ts-check
 
 const cacheService = require("../cache/CacheService");
-const ChatHandle = require("../core/chats/chat-handle");
 const Command = require("./command.class");
 
 class RegisrtationCommand extends Command {
