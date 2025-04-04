@@ -11,16 +11,16 @@ class FormCommand extends Command {
   handle() {
     this.bot.on("message", async (msg) => {
       try {
-      //   console.log(msg);
 
         new LoggerManager().logMessage("log", "bot.on(message)", msg);
         const chatId = msg.chat.id;       
 
+        //Меню
         if (msg.text === "/start") {
           return;
         }
 
-        if (msg.text === "/registration") {
+        if (msg.text === "/about") {
           return;
         }
 
@@ -32,19 +32,17 @@ class FormCommand extends Command {
           return;
         }
 
-        if (msg.text === "/logoutchat") {
+        //Регистрация
+        if (msg.text === "/registration") {
           return;
         }
 
+        //Технические команды
         if (msg.text === "/myid") {
           return;
         }
 
         if (msg.text === "/cleancache") {
-          return;
-        }
-
-        if (msg.text === "/about") {
           return;
         }
 

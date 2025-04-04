@@ -27,16 +27,20 @@ try {
 
   // Создаем массив команд
   const commands = [
-    new RegisrtationCommand(bot.bot),
+    //Меню
+    new AboutCommand(bot.bot),
     new OrderCommand(bot.bot),
-    new FormCommand(bot.bot),
-    new ButtonsCommand(bot.bot),
     new ClearOrderCommand(bot.bot),
+    //Регистрация
+    new RegisrtationCommand(bot.bot),
+    //Технические команды
     new MyIdCommand(bot.bot),
     new CleanCacheCommand(bot.bot),
+
+    new FormCommand(bot.bot),
+    new ButtonsCommand(bot.bot),
     new ContactCommand(bot.bot),
     new PhotoCommand(bot.bot),
-    new AboutCommand(bot.bot)
   ];
   
   commands.forEach(command => command.handle());
