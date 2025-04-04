@@ -36,7 +36,7 @@ try {
     //Технические команды
     new MyIdCommand(bot.bot),
     new CleanCacheCommand(bot.bot),
-
+      
     new FormCommand(bot.bot),
     new ButtonsCommand(bot.bot),
     new ContactCommand(bot.bot),
