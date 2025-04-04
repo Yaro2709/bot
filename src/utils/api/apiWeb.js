@@ -94,13 +94,6 @@ class ApiWeb {
     this.postData(post, url);
   }
 
-  // последние 4 заказа получить кнопки
-  async botCommandChats(tlgId) {
-    let url = BOT_API_URL + "/api/bot/command/chats";
-    const post = { tlgId: tlgId };
-    this.postData(post, url);
-  }
-
   // войти в чат по номеру заказа
   async botButtonsChat(tlgId, numberOrder) {
     let url = BOT_API_URL + "/api/bot/buttons/chat";

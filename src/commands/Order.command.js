@@ -37,7 +37,7 @@ class OrderCommand extends Command {
               remove_keyboard: true, // Удаляем клавиатуру
             },
           };
-          
+
      new ApiWeb(this.bot).botCommandOrder(chatId);    
     });
   }

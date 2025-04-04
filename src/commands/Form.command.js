@@ -32,10 +32,6 @@ class FormCommand extends Command {
           return;
         }
 
-        if (msg.text === "/chats") {
-          return;
-        }
-
         if (msg.text === "/logoutchat") {
           return;
         }

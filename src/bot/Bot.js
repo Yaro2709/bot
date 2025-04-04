@@ -25,8 +25,8 @@ class Bot {
           { command: "/start", description: "Начальное приветствие" },
           { command: "/about", description: "О нас" },
           { command: "/order", description: "Оформить заявку" },
-          { command: "/clear", description: "Отменить заполнение заявки/выйти из чатов"},
-          { command: "/chats", description: "Мои заказы" },
+          { command: "/clear", description: "Отменить заполнение заявки"},
+          // { command: "/chats", description: "Мои заказы" },
           // { command: "/logoutchat", description: "Выйти из чатов" },
           // { command: "/myid", description: "Запросить мой id" },
         ]);

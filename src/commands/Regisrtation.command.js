@@ -16,9 +16,7 @@ class RegisrtationCommand extends Command {
       if (msg.chat.type !== 'private') {
         this.requestMessage(chatId, `Эта команда доступна только в личных сообщениях. ${chatId}`);
         return;
-      }  
-
-     // new ChatHandle(this.bot).logoutChat(chatId);
+      }
 
       const options = {
         reply_markup: {
